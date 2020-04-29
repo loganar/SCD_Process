@@ -1,0 +1,1 @@
+select * from tv_orders_new    union    select * from tv_orders_old    where orderNumber    not in (select orderNumber from tv_orders_new )
